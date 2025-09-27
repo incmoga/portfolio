@@ -1,40 +1,86 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="icon" href="assets/favicon.ico" />
-</head>
-<body>
-    <header class="header">
-        <div class="container">
-            <div class="header__top">
-                <nav class="menu">
-                    <ul class="menu__list">
-                        <li class="menu__item">
-                            <a href="#" class="menu__link">about me</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#" class="menu__link">portfolio</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#" class="menu__link">price</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#" class="menu__link">faq</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#" class="menu__link">contacts</a>
-                        </li>
-                    </ul>
-                </nav>
-                <a href="#" class="logo">
-                    <img src="/assets/svg/logo.svg" alt="logo">
-                </a>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="icon" href="assets/favicon.ico" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="header__top">
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">about me</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">portfolio</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">price</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">faq</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">contacts</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a href="#" class="logo">
+                        <img src="/assets/svg/logo.svg" alt="logo">
+                    </a>
+                </div>
             </div>
-        </div>
-    </header>
-</body>
-</html>
+        </header>
+        <section class="hero">
+            <div class="achievement-label hero__side-label">
+                <span class="achievement-label__year">2025</span>
+                <div class="achievement-label__divider">
+                    <img class="achievement-label__line" src="/assets/svg/line.svg" alt="line-divider">
+                </div>
+                <span class="achievement-label__award">Best Photographer by MAX</span>
+            </div>
+            <div class="hero__content">
+                <div class="hero__main">
+                    <div class="hero__info">
+                        <div class="stats hero__stats">
+                            <div class="stats__item">
+                                <span class="stats__prefix">+</span>
+                                <span class="stats__value">487</span>
+                                <span class="stats__text">Photo sessions</span>
+                            </div>
+                            <div class="stats__item">
+                                <span class="stats__prefix">+</span>
+                                <span class="stats__value">356</span>
+                                <span class="stats__text">Satisfied clients</span>
+                            </div>
+                        </div>
+                        <h1 class="hero__title">Professional photographer</h1>
+                        <p class="hero__motto">Capture the Moment. Tell Your Story.</p>
+                    </div>
+                    <div class="scroll-prompt hero__scroll-prompt">
+                        <span class="scroll-prompt__text">Scroll down</span>
+                        <div class="scroll-prompt__arrow">
+                            <img class="scroll-prompt__icon" src="/assets/svg/arrow-down.svg" alt="arrow-down">
+                        </div>
+                    </div>
+                </div>
+                <div class="hero__media">
+                    <div class="hero__photo-wrap hero__photo-wrap--centered">
+                        <img src="/assets/img/webp/img-10.webp" alt="Photographer in montains" class="hero__photo">
+                    </div>
+                </div>
+                <div class="hero__greeting">
+                    <div class="hero__photo-wrap hero__photo-wrap--top">
+                        <img src="/assets/img/webp/img-11.webp" alt="Portreit of Vera" class="hero__photo">
+                    </div>
+                    <p class="hero__greeting-text">Hi! I’m Vera, a photographer. For me, photography is more than just an image. </p>
+                </div>
+            </div>
+        </section>
+    </body>
+    </html>
