@@ -1,16 +1,10 @@
-/* normalize */
+/* Normalize */
 *,
 *::before,
 *::after {
     box-sizing: border-box;
 }
 
-body {
-    margin: 0;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    color: #222;
-    background-color: #fff;
-}
 
 img,
 picture,
@@ -57,4 +51,56 @@ a {
 *+h6,
 *+p {
     margin-top: 0;
+}
+
+/* Fonts */
+@font-face {
+    font-family: 'Mulish';
+    src: url(/assets/fonts/Mulish-VariableFont_wght.ttf) format(truetype);
+    font-weight: 300 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mulish-Italic';
+    src: url(/assets/fonts/Mulish-Italic-VariableFont_wght.ttf) format(truetype);
+    font-weight: 300 800;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url(/assets/fonts/Oswald-VariableFont_wght.ttf) format(truetype);
+    font-weight: 200 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Variables */
+:root {
+    /* color */
+    --color-white: #fff;
+    --color-dark: #222;
+    --color-red: #ff3c3c;
+    --color-gray: #989898;
+    
+    /* typograhy */
+    --font-family-content: 'Mulish', sans-serif;
+    --font-family-title: 'Oswald', sans-serif;
+}
+
+/* Global-style */
+body {
+    margin: 0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #222;
+    background-color: #fff;
+}
+
+/* Layout */
+.container{
+    max-width: 1440px;
+    padding: 60px 20px;
 }
