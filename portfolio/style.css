@@ -336,9 +336,153 @@ body {
     object-fit: cover;
 }
 
-
-
 /* portfolio */
+.portfolio {
+    background-color: var(--color-dark);
+    color: var(--color-white);
+}
+
+.portfolio__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.portfolio__content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 360px;
+}
+
+.portfolio__title{
+    font-family: var(--font-family-title);
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 125%;
+    text-transform: uppercase;
+}
+.portfolio__description{
+    font-family: var(--font-family-content);
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 150%;
+}
 /* price */
+.price__inner{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.price__header {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.price__title {
+    font-family: var(--font-family-title);
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 125%;
+    text-transform: uppercase;
+}
+.price__description {
+    font-family: var(--font-family-content);
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 150%;
+}
+
+.price
+
+.price__cards {
+    display: flex;
+    gap: 40px;
+}
+
+.price__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid var(--color-dark);
+    padding: 24px;
+    min-height: 500px;
+}
+
+.price__card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    
+}
+.price__card-title {
+    font-family: var(--font-family-title);
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 140%;
+    text-transform: uppercase;
+}
+.price__card-features {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-family: var(--font-family-content);
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 150%;
+}
+.price__card-feature {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+
+}
+
+.price__card-feature::before{
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: var(--color-dark);
+}
+.price__card-price {
+    font-family: var(--font-family-title);
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 150%;
+    text-transform: uppercase;
+}
+.price__card-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.price__card-note {
+    font-family: var(--font-family-content);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 125%;
+}
+.price__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    height: 60px;
+    background-color: var(--color-dark);
+}
+
+.price__link {
+    font-family: var(--font-family-title);
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 150%;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--color-white);
+}
 /* faq */
 /* footer */
