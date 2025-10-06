@@ -52,6 +52,12 @@ a {
     margin-top: 0;
 }
 
+button {
+    background-color: transparent;
+    padding: 0;
+    border: none;
+}
+
 /* Fonts */
 @font-face {
     font-family: 'Mulish';
@@ -134,7 +140,7 @@ body {
 
 .header__container {
     max-width: 1440px;
-    padding: 0 1.25rem;
+    padding: 1.25rem;
     margin: 0 auto;
 }
 
@@ -153,17 +159,45 @@ body {
     text-transform: uppercase;
 }
 
+.menu__btn {
+    display: none;
+    width: 40px;
+    height: 20px;
+    position: relative;
+}
+
+.menu__btn::after,
+.menu__btn::before {
+    content: '';
+    right: 0;
+    height: 2px;
+    background-color: var(--color-white);
+    position: absolute;
+}
+
+.menu__btn::after {
+    top: 5px;
+    width: 12px;
+}
+.menu__btn::before {
+    bottom: 5px;
+    width: 20px;
+}
+
+
 .menu__list {
     display: flex;
     justify-content: space-between;
     gap: 2.5rem;
-    padding:20px;
-
 }
 
 @media (max-width:768px) {
-    .menu {
+    .menu__list {
         display: none;
+    }
+
+    .menu__btn{
+        display: block;
     }
 }
 
