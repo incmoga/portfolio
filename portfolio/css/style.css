@@ -164,6 +164,7 @@ body {
     width: 40px;
     height: 20px;
     position: relative;
+    cursor: pointer;
 }
 
 .menu__btn::after,
@@ -192,12 +193,33 @@ body {
 }
 
 @media (max-width:768px) {
+    /* the burger menu slides out from the right */
     .menu__list {
-        display: none;
+        position: fixed;
+        background-color: var(--color-dark);
+        top: 60px;
+        right: -100%;
+        width: 100%;
+        height: calc(100vh - 60px);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+        padding: 0 20px;
+        z-index: 999;
+        transition: right 0.5s ease-in-out;
     }
+
+    .menu__list.active {
+        right: 0;
+    } 
 
     .menu__btn{
         display: block;
+    }
+
+    .menu__item {
+        padding: 18px 0;
     }
 }
 
