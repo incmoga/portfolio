@@ -110,6 +110,10 @@ body {
     background-color: #fff;
 }
 
+.no-scroll {
+    overflow: hidden;
+}
+
 /* Layout */
 .container {
     max-width: 1440px;
@@ -161,10 +165,11 @@ body {
 
 .menu__btn {
     display: none;
-    width: 40px;
+    width: 20px;
     height: 20px;
     position: relative;
     cursor: pointer;
+    transition: all 0.5s ease-in-out;
 }
 
 .menu__btn::after,
@@ -174,6 +179,8 @@ body {
     height: 2px;
     background-color: var(--color-white);
     position: absolute;
+    transform-origin: center;
+    transition: all 0.2s ease-in-out;
 }
 
 .menu__btn::after {
@@ -184,6 +191,18 @@ body {
     bottom: 5px;
     width: 20px;
 }
+
+.menu__btn.active::after {
+    top: 50%;
+    transform: rotate(45deg)  translateY(-50%);
+    width: 20px;
+}
+.menu__btn.active::before {
+    bottom: 50%;
+    transform: rotate(-45deg) translateY(50%);
+    width: 20px;
+}
+
 
 
 .menu__list {
@@ -221,6 +240,7 @@ body {
     .menu__item {
         padding: 18px 0;
     }
+
 }
 
 /* hero */
