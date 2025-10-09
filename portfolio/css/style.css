@@ -912,6 +912,57 @@ body {
     text-align: center
 }
 
+/* Modal-window */
+.modal-window {
+    border: none;
+    padding: 60px;
+}
+.modal-window__inner {}
+.modal-window__close {
+    position: absolute;
+    right: 18px;
+    top: 12px;
+    border: 0;
+    line-height: 1;
+    cursor: pointer;
+    padding: 6px;
+    font-size: 20px;
+}
+.modal-window__content {}
+.modal-window__title {
+    font-family: var(--font-family-title);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    text-transform: uppercase;
+    text-align: center;
+}
+.modal-window__form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+.modal-window__form-field {
+    border: 1px solid var(--color-dark);
+    padding: 18px 12px;
+    max-width: 100%;
+    flex: 1 0 0;
+}
+.modal-window__form-btn {
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    font-family: var(--font-family-title);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-transform: uppercase;
+    text-align: center;
+    min-width: 200px;
+    padding: 18px 20px;
+    cursor: pointer;
+}
+
 /* hover */
 .menu__link:hover,
 .scroll-prompt:hover {
@@ -926,13 +977,16 @@ body {
 }
 
 .price__card:hover,
-.footer__field:hover {
+.footer__field:hover,
+.modal-window__form-field:hover
+ {
     border-color: var(--color-red);
     transition: all 0.5s ease-out;
 }
 
 .price__btn:hover,
-.footer__btn:hover {
+.footer__btn:hover,
+.modal-window__form-btn:hover {
     background-color: var(--color-red);
     color: var(--color-dark);
     border-color: var(--color-red);
@@ -967,6 +1021,43 @@ body {
     text-transform: uppercase;
 }
 .footer__field[type=tel]::-moz-placeholder {
+    color: var(--color-dark);
+    font-family: var(--font-family-title);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    text-transform: uppercase;
+}
+
+.modal-window__form-field[type=text]::placeholder {
+    color: var(--color-gray);
+    font-family: var(--font-family-title);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    text-transform: uppercase;
+}
+.modal-window__form-field[type=text]::-moz-placeholder {
+    color: var(--color-gray);
+    font-family: var(--font-family-title);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    text-transform: uppercase;
+}
+.modal-window__form-field[type=tel]::placeholder {
+    color: var(--color-dark);
+    font-family: var(--font-family-title);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    text-transform: uppercase;
+}
+.modal-window__form-field[type=tel]::-moz-placeholder {
     color: var(--color-dark);
     font-family: var(--font-family-title);
     font-size: 16px;
