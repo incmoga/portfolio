@@ -1,0 +1,71 @@
+/* Hover */
+.menu__link:hover,
+.scroll-prompt:hover {
+  color: var(--color-red);
+  transition: all 0.5s ease-out;
+}
+
+.scroll-prompt__icon:hover {
+  fill: currentColor;
+  transition: all 0.5s ease-out;
+}
+
+.price__card:hover,
+.footer__field:hover,
+.modal-window__form-field:hover {
+  border-color: var(--color-red);
+  transition: all 0.5s ease-out;
+}
+
+.price__btn:hover,
+.footer__btn:hover,
+.modal-window__form-btn:hover {
+  background-color: var(--color-red);
+  color: var(--color-dark);
+  border-color: var(--color-red);
+  transition: all 0.5s ease-out;
+}
+
+/* Placeholder styles */
+footer__field[type="text"],
+footer__field[type="tel"],
+.modal-window__form-field[type="text"],
+.modal-window__form-field[type="tel"] {
+  &::placeholder {
+    font-family: var(--font-family-title);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    text-transform: uppercase;
+  }
+
+  &::-moz-placeholder {
+    font-family: var(--font-family-title);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    text-transform: uppercase;
+  }
+}
+
+.footer__field[type="text"]::placeholder,
+.footer__field[type="text"]::-moz-placeholder {
+  color: var(--color-gray);
+}
+
+.footer__field[type="tel"]::placeholder,
+.footer__field[type="tel"]::-moz-placeholder {
+  color: var(--color-dark);
+}
+
+.modal-window__form-field[type="text"]::placeholder,
+.modal-window__form-field[type="text"]::-moz-placeholder {
+  color: var(--color-gray);
+}
+
+.modal-window__form-field[type="tel"]::placeholder,
+.modal-window__form-field[type="tel"]::-moz-placeholder {
+  color: var(--color-dark);
+}

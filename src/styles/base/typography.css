@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'Mulish';
+  src: url(/src/assets/fonts/Mulish-VariableFont_wght.ttf) format(truetype);
+  font-weight: 300 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mulish-Italic';
+  src: url(/src/assets/fonts/Mulish-Italic-VariableFont_wght.ttf) format(truetype);
+  font-weight: 300 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Oswald';
+  src: url(/src/assets/fonts/Oswald-VariableFont_wght.ttf) format(truetype);
+  font-weight: 200 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Global-style */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  /* display: flex;
+	flex-direction: column;
+	align-items: center; */
+  margin: 0 auto;
+  font-family: var(--font-family-content), 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #222;
+  background-color: #fff;
+}
+
+.no-scroll {
+  overflow: hidden;
+}

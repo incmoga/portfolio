@@ -1,0 +1,11 @@
+:root {
+  /* color */
+  --color-white: #fff;
+  --color-dark: #222;
+  --color-red: #ff3c3c;
+  --color-gray: #989898;
+
+  /* typograhy */
+  --font-family-content: 'Mulish', sans-serif;
+  --font-family-title: 'Oswald', sans-serif;
+}

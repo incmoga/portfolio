@@ -1,0 +1,108 @@
+.header {
+  background-color: var(--color-dark);
+  color: var(--color-white);
+}
+
+.header__container {
+  max-width: 1440px;
+  padding: 1.25rem;
+  margin: 0 auto;
+}
+
+.header__main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+
+  font-family: var(--font-family-title);
+  font-size: 1rem;
+  line-height: 150%;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.menu__btn {
+  display: none;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+
+  &::after,
+  &::before {
+    content: '';
+    right: 0;
+    height: 2px;
+    background-color: var(--color-white);
+    position: absolute;
+    transform-origin: center;
+    transition: all 0.2s ease-in-out;
+  }
+
+  &::after {
+    top: 5px;
+    width: 12px;
+  }
+
+  &::before {
+    bottom: 5px;
+    width: 20px;
+  }
+
+  &.active {
+    &::after {
+      top: 50%;
+      transform: rotate(45deg) translateY(-50%);
+      width: 20px;
+    }
+
+    &::before {
+      bottom: 50%;
+      transform: rotate(-45deg) translateY(50%);
+      width: 20px;
+    }
+  }
+}
+
+/* ============= MENU ============= */
+
+.menu__list {
+  display: flex;
+  justify-content: space-between;
+  gap: 2.5rem;
+
+  @media (max-width: 768px) {
+    /* the burger menu slides out from the right */
+    position: fixed;
+    background-color: var(--color-dark);
+    top: 60px;
+    right: -100%;
+    width: 100%;
+    height: calc(100vh - 60px);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    padding: 0 20px;
+    z-index: 999;
+    transition: right 0.5s ease-in-out;
+
+    &.active {
+      right: 0;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .menu__btn {
+    display: block;
+  }
+
+  .menu__item {
+    padding: 18px 0;
+  }
+}

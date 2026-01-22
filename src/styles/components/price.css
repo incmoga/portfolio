@@ -1,0 +1,128 @@
+.price__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.price__header {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.price__title {
+  font-family: var(--font-family-title);
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 125%;
+  text-transform: uppercase;
+}
+
+.price__description {
+  font-family: var(--font-family-content);
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 150%;
+}
+
+.price__cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+
+  @media (max-width: 1200px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 0 34px;
+  }
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+  }
+}
+
+.price__card {
+  display: flex;
+  width: auto;
+  min-height: 500px;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid var(--color-dark);
+  padding: 24px;
+}
+
+.price__card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.price__card-title {
+  font-family: var(--font-family-title);
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 140%;
+  text-transform: uppercase;
+}
+
+.price__card-features {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-family: var(--font-family-content);
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 150%;
+}
+
+.price__card-feature {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+
+  &::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: var(--color-dark);
+  }
+}
+
+.price__card-price {
+  font-family: var(--font-family-title);
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+
+.price__card-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.price__card-note {
+  font-family: var(--font-family-content);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 125%;
+}
+
+.price__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px 20px;
+  height: 60px;
+  background-color: var(--color-dark);
+  font-family: var(--font-family-title);
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 150%;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--color-white);
+}
