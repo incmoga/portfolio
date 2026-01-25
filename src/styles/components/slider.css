@@ -1,0 +1,30 @@
+.portfolio__slider {
+  display: flex;
+  max-width: 1440px;
+  max-height: 600px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide-img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.swiper-button-next {
+  right: auto;
+  margin-right: 20px;
+}
